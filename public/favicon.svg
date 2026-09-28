@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <defs>
+    <linearGradient id="es-body-grad" x1="5" y1="3.5" x2="27" y2="28.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+    <linearGradient id="es-fold-grad" x1="19" y1="3.5" x2="26.5" y2="11" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#BAE6FD" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <filter id="es-shadow" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#0F172A" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Document Silhouette -->
+  <path d="M 7.5 4.5 C 6.67157 4.5 6 5.17157 6 6 V 26 C 6 26.8284 6.67157 27.5 7.5 27.5 H 24.5 C 25.3284 27.5 26 26.8284 26 26 V 11 L 19.5 4.5 H 7.5 Z" fill="url(#es-body-grad)" />
+
+  <!-- Fold Flap with subtle depth -->
+  <path d="M 19.5 4.5 V 9.75 C 19.5 10.4404 20.0596 11 20.75 11 H 26 L 19.5 4.5 Z" fill="url(#es-fold-grad)" />
+  <path d="M 19.5 4.5 L 26 11" stroke="#0369A1" stroke-width="0.6" stroke-opacity="0.3" />
+
+  <!-- Precision Caliper Brackets (Defining Exact Target Bounds ⌜ ⌝ ⌞ ⌟) -->
+  <!-- Top Left Bracket -->
+  <path d="M 10.5 15.5 V 14 C 10.5 13.4477 10.9477 13 11.5 13 H 13" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Top Right Bracket -->
+  <path d="M 19 13 H 20.5 C 21.0523 13 21.5 13.4477 21.5 14 V 15.5" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Bottom Left Bracket -->
+  <path d="M 10.5 21.5 V 23 C 10.5 23.5523 10.9477 24 11.5 24 H 13" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Bottom Right Bracket -->
+  <path d="M 19 24 H 20.5 C 21.0523 24 21.5 23.5523 21.5 23 V 21.5" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Precision Caliper Alignment Guides -->
+  <line x1="10.5" y1="18.5" x2="12.25" y2="18.5" stroke="#BAE6FD" stroke-width="1.75" stroke-linecap="round" />
+  <line x1="19.75" y1="18.5" x2="21.5" y2="18.5" stroke="#BAE6FD" stroke-width="1.75" stroke-linecap="round" />
+
+  <!-- Calibrated Target Center Core (Exact Target Size) -->
+  <circle cx="16" cy="18.5" r="2" fill="#38BDF8" />
+  <circle cx="16" cy="18.5" r="0.75" fill="#FFFFFF" />
+</svg>
